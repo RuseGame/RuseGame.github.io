@@ -1,0 +1,66 @@
+.container {
+	max-width: 800px;
+}
+.section {
+	padding: 3rem 0px;
+	border-top: 1px solid #EEE;
+	margin-bottom: 0px;
+}
+p {
+  margin-bottom: 0px;
+  white-space: normal;
+}
+.header {
+  margin-top: 10rem;
+  text-align: center;
+  border-top: none;
+}
+.title {
+  margin-bottom: 5rem;
+}
+code {
+	display: block;
+	margin: 10px 0.2rem;
+	border: 1px solid #5F5F5F;
+}
+td code {
+  text-align: center;
+  margin: 0px;
+}
+li {
+	cursor: pointer;
+	margin: 0px;
+}
+li:hover {
+	background:#FF8989;
+}
+li code, .title code {
+	display: inline-block;
+}
+.blue {
+	background:#BFCEE6;
+}
+.green {
+	background:#C0E6BF;
+}
+.orange {
+	background:#E6D0BF;
+}
+.pink {
+	background:#E6BFE1;
+}
+[contentEditable=true]:empty:not(:focus):before{
+  content:attr(data-ph);
+  color:grey;
+  font-style:italic;
+}   
+.button.button-primary:hover, button.button-primary:hover, input.button-primary[type="submit"]:hover, input.button-primary[type="reset"]:hover, input.button-primary[type="button"]:hover, .button.button-primary:focus, button.button-primary:focus, input.button-primary[type="submit"]:focus, input.button-primary[type="reset"]:focus, input.button-primary[type="button"]:focus {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0;
+}
+.button.button-primary:hover, button.button-primary:hover, input.button-primary[type="submit"]:hover, input.button-primary[type="reset"]:hover, input.button-primary[type="button"]:hover {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB;
+}            

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ruse Manager Software</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/skeleton.css">
+  <link rel="stylesheet" href="styles/custom.css">  
+
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="one-half column" style="margin-top: 5%">
+        <h4>Ruse Manager</h4>
+      </div>
+    </div>
+
+    <form class="section">
+      <div class="row">
+        <div class="three columns">
+          <label for="PlayerSelector">Player</label>
+          <select class="u-full-width" id="PlayerSelector">
+            <option value="blue">Mr. Blue</option>
+            <option value="white">Mr. White</option>
+            <option value="green">Mr. Green</option>
+            <option value="orange">Mr. Orange</option>
+            <option value="pink">Mr. Pink</option>
+          </select>
+        </div>
+
+        <div class="three columns">
+          <label for="ActionSelector">Action</label>
+          <select class="u-full-width" id="ActionSelector">
+            <option value="message">Message</option>
+            <option value="spoof">Spoof</option>
+            <option value="wiretap">Wiretap</option>
+          </select>
+        </div>
+
+        <div class="three columns">
+          <label for="ToSelector">To</label>
+          <select class="u-full-width" id="ToSelector">
+            <option value="none">None</option>
+            <option value="blue">Mr. Blue</option>
+            <option value="white">Mr. White</option>
+            <option value="green">Mr. Green</option>
+            <option value="orange">Mr. Orange</option>
+            <option value="pink">Mr. Pink</option>
+          </select>
+        </div>
+
+        <div class="three columns">
+          <label for="FromSelector">From</label>
+          <select class="u-full-width" id="FromSelector">
+            <option value="none">None</option>
+            <option value="blue">Mr. Blue</option>
+            <option value="white">Mr. White</option>
+            <option value="green">Mr. Green</option>
+            <option value="orange">Mr. Orange</option>
+            <option value="pink">Mr. Pink</option>
+          </select>
+        </div>
+      </div>
+      <label for="TextArea">Text</label>
+      <textarea class="u-full-width" id="TextArea"></textarea>
+      <input class="button-primary" value="Submit" type="button" onclick="addAction();">
+    </form>
+
+    <div class="section">
+      <div class="row">
+        <div class="nine columns">
+          <h4>Actions</h4>
+        </div>
+        <div class="three columns">
+          <input class="button-primary" value="Generate Output" type="button" onclick="generateOutput()">
+        </div>
+      </div>
+      <div class="row">
+        <ul id="ActionList">
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="row">
+        <h4>Output</h4>
+        <code class="blue">
+          <p>Mr. Blue,</p>
+          <p id="BlueOut"></p>
+          <p id="BlueWireOut"></p>
+        </code>
+        <code>
+          <p>Mr. White,</p>
+          <p id="WhiteOut"></p>
+          <p id="WhiteWireOut"></p>
+        </code>
+        <code class="green">
+          <p>Mr. Green,</p>
+          <p id="GreenOut"></p>
+          <p id="GreenWireOut"></p>
+        </code>
+        <code class="orange">
+          <p>Mr. Orange,</p>
+          <p id="OrangeOut"></p>
+          <p id="OrangeWireOut"></p>
+        </code>
+        <code class="pink">
+          <p>Mr. Pink,</p>
+          <p id="PinkOut"></p>
+          <p id="PinkWireOut"></p>
+        </code>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="row">
+        <p>Created by <a href="http://jaredharkins.com">Jared Harkins</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
